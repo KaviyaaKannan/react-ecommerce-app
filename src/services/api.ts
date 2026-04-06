@@ -1,9 +1,16 @@
-import axios from "axios"
+// src/services/api.ts
 
-export const API = axios.create({
+const BASE_URL = "http://localhost:5000";
 
-baseURL:"https://fakestoreapi.com"
-
-})
-
-export const getProducts = () => API.get("/products")
+export const getProducts = async () => {
+  try {
+    const res = await fetch(`${BASE_URL}/products`);
+    if (!res.ok) {
+      throw new Error("Failed to fetch products");
+    }
+    return await res.json();
+  } catch (error) {
+    console.error("API Error:", error);
+    return [];
+  }
+};

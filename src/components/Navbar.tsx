@@ -1,17 +1,20 @@
 import React from "react"
 import { Link, useNavigate, useLocation } from "react-router-dom"
-import { useSelector } from "react-redux"
+import { useSelector, useDispatch } from "react-redux"
+import { logout as logoutAction } from "../redux/authSlice"
+import { RootState } from "../redux/store"
 
 function Navbar() {
 
  const navigate = useNavigate()
  const location = useLocation()
+ const dispatch = useDispatch()
 
  const cartItems = useSelector(
   (state:any)=>state.cart.items
  )
 
- const user = localStorage.getItem("user")
+ const user = useSelector((state: RootState) => state.auth.user)
 
  const hideMenu =
   location.pathname === "/login" ||
@@ -19,7 +22,7 @@ function Navbar() {
 
  const logout = () => {
 
-  localStorage.removeItem("user")
+  dispatch(logoutAction())
 
   navigate("/login")
 

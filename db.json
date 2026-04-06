@@ -1,0 +1,39 @@
+{
+  "products": [
+    { "id": 1, "title": "iPhone 14", "price": 799, "category": "electronics", "image": "https://picsum.photos/id/101/400/400" },
+    { "id": 2, "title": "Samsung TV", "price": 1200, "category": "electronics", "image": "https://picsum.photos/id/102/400/400" },
+    { "id": 3, "title": "Laptop", "price": 999, "category": "electronics", "image": "https://picsum.photos/id/103/400/400" },
+    { "id": 4, "title": "Headphones", "price": 199, "category": "electronics", "image": "https://picsum.photos/id/104/400/400" },
+    { "id": 5, "title": "Smart Watch", "price": 249, "category": "electronics", "image": "https://picsum.photos/id/105/400/400" },
+    { "id": 6, "title": "Camera", "price": 850, "category": "electronics", "image": "https://picsum.photos/id/106/400/400" },
+
+    { "id": 7, "title": "Gold Necklace", "price": 1500, "category": "jewelery", "image": "https://picsum.photos/id/107/400/400" },
+    { "id": 8, "title": "Diamond Ring", "price": 2000, "category": "jewelery", "image": "https://picsum.photos/id/108/400/400" },
+    { "id": 9, "title": "Silver Bracelet", "price": 120, "category": "jewelery", "image": "https://picsum.photos/id/109/400/400" },
+    { "id": 10, "title": "Earrings", "price": 80, "category": "jewelery", "image": "https://picsum.photos/id/110/400/400" },
+
+    { "id": 11, "title": "Men T-Shirt", "price": 25, "category": "men's clothing", "image": "https://picsum.photos/id/111/400/400" },
+    { "id": 12, "title": "Men Jeans", "price": 60, "category": "men's clothing", "image": "https://picsum.photos/id/112/400/400" },
+    { "id": 13, "title": "Men Jacket", "price": 120, "category": "men's clothing", "image": "https://picsum.photos/id/113/400/400" },
+    { "id": 14, "title": "Men Shoes", "price": 90, "category": "men's clothing", "image": "https://picsum.photos/id/114/400/400" },
+    { "id": 15, "title": "Men Hoodie", "price": 70, "category": "men's clothing", "image": "https://picsum.photos/id/115/400/400" },
+
+    { "id": 16, "title": "Women Dress", "price": 80, "category": "women's clothing", "image": "https://picsum.photos/id/116/400/400" },
+    { "id": 17, "title": "Women Top", "price": 30, "category": "women's clothing", "image": "https://picsum.photos/id/117/400/400" },
+    { "id": 18, "title": "Women Skirt", "price": 45, "category": "women's clothing", "image": "https://picsum.photos/id/118/400/400" },
+    { "id": 19, "title": "Women Handbag", "price": 120, "category": "women's clothing", "image": "https://picsum.photos/id/119/400/400" },
+    { "id": 20, "title": "Women Sandals", "price": 50, "category": "women's clothing", "image": "https://picsum.photos/id/120/400/400" },
+
+    { "id": 21, "title": "Tablet", "price": 450, "category": "electronics", "image": "https://picsum.photos/id/121/400/400" },
+    { "id": 22, "title": "Gaming Console", "price": 500, "category": "electronics", "image": "https://picsum.photos/id/122/400/400" },
+    { "id": 23, "title": "Men Cap", "price": 20, "category": "men's clothing", "image": "https://picsum.photos/id/123/400/400" },
+    { "id": 24, "title": "Men Belt", "price": 35, "category": "men's clothing", "image": "https://picsum.photos/id/124/400/400" },
+    { "id": 25, "title": "Women Watch", "price": 150, "category": "women's clothing", "image": "https://picsum.photos/id/125/400/400" },
+    { "id": 26, "title": "Women Saree", "price": 95, "category": "women's clothing", "image": "https://picsum.photos/id/126/400/400" },
+    { "id": 27, "title": "Pendant", "price": 180, "category": "jewelery", "image": "https://picsum.photos/id/127/400/400" },
+    { "id": 28, "title": "Gold Ring", "price": 600, "category": "jewelery", "image": "https://picsum.photos/id/128/400/400" },
+    { "id": 29, "title": "Bluetooth Earbuds", "price": 120, "category": "electronics", "image": "https://picsum.photos/id/129/400/400" },
+    { "id": 30, "title": "Women Sweater", "price": 110, "category": "women's clothing", "image": "https://picsum.photos/id/130/400/400" }
+  ],
+  "cart": []
+}
