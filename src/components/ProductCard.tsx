@@ -13,7 +13,7 @@ function ProductCard({ product }: any) {
     dispatch(addToCart(product));
   };
 
-  // ✅ REAL IMAGE MAPPING
+  // IMAGE MAPPING
   const getImage = (product: any) => {
     const title = product.title.toLowerCase();
 

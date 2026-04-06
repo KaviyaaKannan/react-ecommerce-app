@@ -10,17 +10,17 @@ function Home() {
   const [page, setPage] = useState(1);
   const [loading, setLoading] = useState(true);
 
-  const itemsPerPage = 10; // ✅ 10 per page
+  const itemsPerPage = 10; 
 
-  // ✅ SINGLE API CALL
+  // API CALL
   useEffect(() => {
     getProducts().then((res) => {
-      setProducts(res); // ✅ FIXED
+      setProducts(res); 
       setLoading(false);
     });
   }, []);
 
-  // 🔍 FILTER
+  // FILTER
   const filteredProducts = products.filter((p: any) => {
     return (
       p.title.toLowerCase().includes(search.toLowerCase()) &&
@@ -28,12 +28,12 @@ function Home() {
     );
   });
 
-  // 🔄 RESET PAGE WHEN FILTER/SEARCH CHANGES
+  // RESET PAGE WHEN FILTER/SEARCH CHANGES
   useEffect(() => {
     setPage(1);
   }, [search, category]);
 
-  // 📄 PAGINATION LOGIC
+  // PAGINATION 
   const totalPages = Math.ceil(filteredProducts.length / itemsPerPage);
 
   const start = (page - 1) * itemsPerPage;
@@ -64,7 +64,7 @@ function Home() {
 
       </div>
 
-      {/* ⏳ LOADING */}
+      {/* LOADING */}
       {loading ? (
         <h3>Loading...</h3>
       ) : (
@@ -75,7 +75,7 @@ function Home() {
             ))}
           </div>
 
-          {/* ✅ DYNAMIC PAGINATION */}
+          {/* DYNAMIC PAGINATION */}
           <div className="pagination">
             {Array.from({ length: totalPages }, (_, i) => i + 1).map((p) => (
               <button
