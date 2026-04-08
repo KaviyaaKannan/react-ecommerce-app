@@ -4,7 +4,7 @@ A fully functional e-commerce web application built using React, Redux Toolkit, 
 
 ## Live Demo
 
-🔗 https://react-ecommerce-app-theta-ten.vercel.app/
+🔗 https://react-ecommerce-shop.vercel.app/
 
 ## Features
 
