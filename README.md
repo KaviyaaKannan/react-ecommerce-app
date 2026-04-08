@@ -1,48 +1,79 @@
-# ReactShop - Ecommerce Web App
+# React E-Commerce App
 
-A modern ecommerce web application built using **React, Redux Toolkit, and TypeScript** with authentication and cart functionality.
+A fully functional e-commerce web application built using React, Redux Toolkit, and TypeScript. The application includes product listing, search, filtering, pagination, authentication, and cart management features.
 
----
+## Live Demo
+
+🔗 https://react-ecommerce-app-theta-ten.vercel.app/
 
 ## Features
 
-- User Authentication (Signup & Login with validation)
-- Product Listing with Pagination
-- Search & Filter Products
-- Add to Cart / Remove from Cart
-- Cart Quantity Management
+- Product Search
+- Category Filtering
+- Pagination (10 products per page)
+- Add to Cart functionality
+- Login & Signup (with localStorage)
 - Protected Routes (Cart accessible only after login)
-- Persistent Login using LocalStorage
-- Responsive UI with clean design
+- Fast performance using Vite
+- Fully deployed on Vercel
+
+## Tech Stack
+
+- React.js
+- TypeScript
+- Redux Toolkit
+- Vite
+- CSS
+- Vercel (Deployment)
+
+## Project Structure
+
+```
+src/
+│
+├── components/      # Reusable UI components
+├── pages/           # Home, Login, Signup, Cart
+├── redux/           # Redux store & slices
+├── services/        # API handling (local JSON)
+├── data/            # Static product data
+├── App.tsx
+└── main.tsx
+
+## Installation & Setup
+
+Clone the repository:
+
+git clone https://github.com/KaviyaaKannan/react-ecommerce-app.git
+cd react-ecommerce-app
+
+Install dependencies:
+
+npm install
+
+Run the app:
+
+npm run dev
+
+Build for production:
+
+npm run build
+
+## Authentication
+
+* Signup stores user data in localStorage
+* Login validates credentials from stored users
+* Cart page is protected using React Router
 
 
-## Getting Started
+## API Handling
 
-### Clone the repository
-
-git clone https://github.com/your-username/react-ecommerce-app.git
-- cd react-ecommerce-app
-- npm install
-- npm run dev
-- Open in browser http://localhost:5173
-
-  Home Page
-  <img width="1918" height="870" alt="Home" src="https://github.com/user-attachments/assets/998ea482-2b38-4d8e-a983-c6385d031f72" />
-
-  Cart Page
-  <img width="1918" height="887" alt="Cart" src="https://github.com/user-attachments/assets/335c3618-2d2d-4ef0-a206-1d15d3409319" />
-
-  Empty Cart page
-  <img width="1918" height="876" alt="Empty cart" src="https://github.com/user-attachments/assets/03c165ef-2a71-4eb2-a339-e0a624c3b982" />
-
-  Login Page
-  <img width="1918" height="876" alt="Login" src="https://github.com/user-attachments/assets/d1da7050-6f86-4a65-9fa0-57c80ba855c1" />
-
-  Signup Page
-  <img width="1918" height="862" alt="Signup" src="https://github.com/user-attachments/assets/8364698c-264c-4d74-9548-3f6109c74472" />
+* Used static JSON (`products.json`) instead of backend
+* Ensures compatibility with Vercel deployment
 
 
+## Deployment
 
+Deployed using Vercel:
 
-  
-
+https://react-ecommerce-app-theta-ten.vercel.app/
+```
